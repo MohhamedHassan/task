@@ -1,196 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"    
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <title>Task</title>
 </head>
+
 <body>
     <nav>
         <h2>p</h2>
-        
+
         <ul class="list-unstyled">
-            <li><i class="fas fa-briefcase"></i> <span class="gray" style="font-size: small">< Back to projets</span></li>
-           <li><div><i class="fas fa-th"></i></div> <span>Tab 1</span></li>
-            <li><div><i class="fas fa-home"></i></div> <span>Tab 2</span></li>
-            <li><div><i class="fas fa-ethernet"></i></div> <span>Tab 4</span></li>
-            <li><div><i class="far fa-file"></i> </div><span >Tab 5</span></li>
+            <li><i class="fas fa-briefcase"></i> <span class="gray" style="font-size: small">
+                    < Back to projets</span> </li> <li>
+                        <div><i class="fas fa-th"></i></div> <span>Tab 1</span></li>
+            <li>
+                <div><i class="fas fa-home"></i></div> <span>Tab 2</span>
+            </li>
+            <li>
+                <div><i class="fas fa-ethernet"></i></div> <span>Tab 4</span>
+            </li>
+            <li>
+                <div><i class="far fa-file"></i> </div><span>Tab 5</span>
+            </li>
         </ul>
     </nav>
     <div>
-    <main>
-        <div class="container main">
-            <div>
-                <h5>Technical Office <span>.East Town(p2)</span></h3>
-            </div>
-            <div>
-               <button> <a class="txt-white">English</a></button>
-                <button><a href="arabic.html" class="txt-black">عربي</a></button>
-            </div>
-        </div>
-        <div class="border"></div>
-        <div class="text-center">
-            <h1>Sbmittal</h1>
-            <small>Uptown Cairo . Technical Office</small>
-        </div>
-    </main>
-    <!-- end main -->
-    <section class="table-section">
-        <div class="container">
-            <div class="inputs-parent">
-                <div class="left">
-                    <div class="input-parent">
-                        <span>Subject</span>
-                        <input type="text" name="Subject" placeholder="Subject" class="long-input">
-                    </div>
-                    <div class="input-parent">
-                        <span>No.</span>
-                        <input type="text" name="number" placeholder="No." class="short-input">
-                    </div>
+        <main>
+            <div class="container main">
+                <div>
+                    <h5>Technical Office <span>.East Town(p2)</span></h3>
                 </div>
-                <div class="right">
-                     <div>
-                         <small>Status</small>
-                        <input type="radio" id="male" name="gender" value="male">
-                        <small>opened</small>
-                        <input type="radio" id="male" name="gender" value="male">
-                        <small>closed</small>
-                     </div>
-                    <div class="input-parent">
-                        <span>Name</span>
-                        <input type="text" name="userName" placeholder="Name" class="long-input">
-                    </div>
+                <div>
+                    <button> <a class="txt-white">English</a></button>
+                    <button><a href="arabic.html" class="txt-black">عربي</a></button>
                 </div>
             </div>
+            <div class="border"></div>
+            <div class="text-center">
+                <h1>Sbmittal</h1>
+                <small>Uptown Cairo . Technical Office</small>
+            </div>
+        </main>
+        <!-- end main -->
+        <section class="table-section">
+            <div class="container">
+                <div class="inputs-parent">
+                    <div class="left">
+                        <div class="input-parent">
+                            <span>Subject</span>
+                            <input type="text" name="Subject" placeholder="Subject" class="long-input">
+                        </div>
+                        <div class="input-parent">
+                            <span>No.</span>
+                            <input type="text" name="number" placeholder="No." class="short-input">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <small>Status</small>
+                            <div class="flex">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <small>opened</small>
+                            </div>
+                            <div class="flex">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <small>closed</small>
+                            </div>
+                        </div>
+                        <div class="input-parent">
+                            <span>Name</span>
+                            <input type="text" name="userName" placeholder="Name" class="long-input">
+                        </div>
+                    </div>
+                </div>
 
-            <button>Add Item</button>
-            <p style="margin-bottom: 15px;">Previous Cycle</p>
-            <div class="border" style="margin-bottom: 50px;"></div>
-            <div style="overflow: auto">
-            <div class="t-head txt-left">
-               <table cellpadding="0" cellspacing="0" >
-                <thead>
-                    <th>No.</th>
-                    <th>Subject</th>
-                    <th>Status</th>
-                    <th>Name</th>
-                </thead>
-               </table>
+                <button>Add Item</button>
+                <p style="margin-bottom: 15px;">Previous Cycle</p>
+                <div class="border" style="margin-bottom: 50px;"></div>
+                <div style="overflow: auto">
+                    <div class="t-head txt-left">
+                        <table cellpadding="0" cellspacing="0">
+                            <thead>
+                                <th>No.</th>
+                                <th>Subject</th>
+                                <th>Status</th>
+                                <th>Name</th>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="t-body  txt-left">
+                        <table cellpadding="0" cellspacing="0">
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Requist For Information</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-           <div class="t-body  txt-left">
-            <table cellpadding="0" cellspacing="0" >
-                
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Requist For Information</td>
-                        <td>True</td>
-                        <td>True</td>
-                    </tr>
-                </tbody>
-            </table>
-           </div>
-        </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
     <!-- end table section -->
-        <i class="fas fa-arrow-alt-circle-up top"></i>
-  
+    <i class="fas fa-arrow-alt-circle-up top"></i>
+
     <!-- end scrollToTop Btton -->
 
     <script src="js/index.js"></script>
 </body>
+
 </html>
