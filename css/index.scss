@@ -11,7 +11,15 @@ $tHeadBG:#efefef;
     margin:0;
     padding:0
 }
-a{text-decoration: none;cursor: pointer;}
+a{
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    line-height: 40px;
+    
+    cursor: pointer;
+}
 .txt-black{color:black}
 .txt-white{color:white}
 .txt-right{text-align: right}
@@ -129,13 +137,12 @@ main {
             color:$lightGray
         }
     }
-    a:first-of-type {
+    button:first-of-type {
        background-color:$mainColor;
-       color:$white;
        border:1px solid $mainColor;
        @extend .mainButtons
     }
-    a:last-of-type {
+    button:last-of-type {
        background-color:$white;
        border:1px solid black;
        @extend .mainButtons
@@ -259,7 +266,7 @@ i.top {
         > div:first-of-type {
             margin-bottom: 20px
         }
-        a {
+        button {
             margin-bottom: 10px
         }
         

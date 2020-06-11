@@ -5,6 +5,10 @@
 
 a {
   text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  line-height: 40px;
   cursor: pointer; }
 
 .txt-black {
@@ -27,7 +31,7 @@ body {
   width: 90%;
   margin: auto; }
 
-.mainButtons, main a:first-of-type, main a:last-of-type {
+.mainButtons, main button:first-of-type, main button:last-of-type {
   border-radius: 5px;
   width: 80px;
   height: 40px;
@@ -114,11 +118,10 @@ main h5 {
   color: #636e72; }
   main h5 span {
     color: #b2bec3; }
-main a:first-of-type {
+main button:first-of-type {
   background-color: #0984e3;
-  color: white;
   border: 1px solid #0984e3; }
-main a:last-of-type {
+main button:last-of-type {
   background-color: white;
   border: 1px solid black; }
 main .text-center {
@@ -213,7 +216,7 @@ i.top {
     text-align: center; }
     .main > div:first-of-type {
       margin-bottom: 20px; }
-    .main a {
+    .main button {
       margin-bottom: 10px; }
 
   h1 {
