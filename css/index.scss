@@ -1,0 +1,308 @@
+$mainColor:#0984e3;
+$white:white;
+$darkGray:#636e72;
+$lightGray:#b2bec3;
+$tHeadBG:#efefef;
+
+
+// end variables
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0
+}
+a{text-decoration: none;cursor: pointer;}
+.txt-black{color:black}
+.txt-white{color:white}
+.txt-right{text-align: right}
+.txt-left{text-align: left}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 82px;
+}
+.container {
+    width:90%;
+    margin:auto
+}
+.mainButtons {
+    border-radius:5px;
+    width:80px;
+    height:40px;
+    display: inline-block;
+    padding: 10px;
+    font-weight:bold;
+    margin-right: 5px;
+    text-align: center
+}
+.text-center {
+    text-align: center;
+}
+.border {
+    height:1px;
+    background-color: $lightGray;
+}
+input {
+    padding: 10px;
+    border: 2px solid $lightGray;
+    border-radius: 5px;
+}
+button,input[type="radio"] {
+cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+input:focus {
+    outline: none !important;
+    border-color:$mainColor 
+}
+.list-unstyled {
+    list-style: none;
+}
+// end global
+.open  
+{
+    span {
+        width: 150px;
+        padding-right: 10px
+    }
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:$white;
+    box-shadow: 3px 0 5px -2px #888;
+    z-index: 111;
+    h2{
+        color: $mainColor;
+        font-size: 60px;
+        text-transform: capitalize;
+        text-align: center;
+        padding:4px 20px;
+        text-align: left
+    }
+    ul {
+        i {     
+            font-size: 35px;
+            padding:5px 20px;
+            color:$lightGray;
+        }
+        li {
+            padding: 10px 0;
+            transition: ease .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 3px solid transparent
+        }
+        li:hover {
+            background:#e4e4e4;
+            border-color:$mainColor
+        }
+        span {
+            font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    display: inline-block;
+    width: 0;
+    overflow-x: hidden;
+    transition: .3s ease-in;
+    color: $lightGray
+        }
+        
+    }
+}
+// end nav bar
+main {
+   
+    .main{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    h5 {
+        color:$darkGray;
+        span {
+            color:$lightGray
+        }
+    }
+    a:first-of-type {
+       background-color:$mainColor;
+       color:$white;
+       border:1px solid $mainColor;
+       @extend .mainButtons
+    }
+    a:last-of-type {
+       background-color:$white;
+       border:1px solid black;
+       @extend .mainButtons
+     }
+     .text-center {
+         padding:25px;
+         box-shadow: 0 4px 2px -2px $lightGray;
+         small{
+             color:$darkGray;
+             font-weight: bold;
+             margin-top:5px;
+             display: block;
+         }
+     }
+}
+
+// end main
+.table-section {
+    padding: 100px 0;
+    .inputs-parent {
+        display:flex
+    }
+    .input-parent {
+        position: relative;
+        padding:10px 0;
+        display: inline-block;
+        span {
+            position: absolute;
+            top: 3px;
+            left: 10px;
+            background: $white;
+            padding: 0 5px;
+            font-size: 10px;
+        }
+        .long-input {
+            width: 250px;
+            @extend input
+        }
+        .short-input {
+            width: 125px;
+            @extend input
+        }
+    }
+    .left {
+        display:flex;
+        flex-direction: column;
+        padding:0 20px 0 0
+    }
+    .right {
+        > div:first-of-type {
+            margin-bottom: 25px;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        input,small {
+            margin:0 5px
+        }
+    }
+    button {
+        background-color: $mainColor;
+        border: none;
+        color:white;
+        font-weight: bold;
+        padding:10px;
+        border-radius:5px;
+        font-weight: bold;
+        margin: 50px 0; 
+    }
+    table {
+        width:100%;
+        table-layout: fixed;
+    }
+    .t-head {
+        background:$tHeadBG;
+        border-left:solid 1px $lightGray;
+        border-top:solid 1px $lightGray;
+        border-right:solid 1px $lightGray;
+        th {
+            padding: 20px 15px;
+            color: $darkGray;
+        }
+    }
+    .t-body {
+        height:200px;
+        overflow: auto;
+        border:solid 1px $lightGray;
+         td {
+            border-bottom: solid 1px $lightGray;
+            padding: 16px;
+        }
+    }
+    ::-webkit-scrollbar {
+        width: 6px;
+    } 
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px $darkGray; 
+    } 
+    ::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 6px gray; 
+    }
+}
+// end table section 
+i.top {
+    color:$mainColor;
+    font-size: 60px;
+    position: fixed;
+    bottom: 50px;
+    right:50px;
+   opacity: 0;
+   transition: .5s;
+   cursor: pointer;
+}
+
+// end scrollTo Top Button 
+@media (max-width: 767.98px) { 
+    body{padding-left: 68px}
+    .main {
+        display:block !important;
+        text-align: center;
+        > div:first-of-type {
+            margin-bottom: 20px
+        }
+        a {
+            margin-bottom: 10px
+        }
+        
+    }
+    h1 {font-size:25px }
+    .table-section {
+        .inputs-parent{display: block}
+        .input-parent {
+            .long-input {width: 160px}
+            .short-input {width: 100px}
+            input {margin: 0 !important}
+        }
+        .right {
+            > div:first-of-type {
+                flex-direction: column;
+                align-items: start;
+                margin-bottom: 5px;
+                small,input {
+                    margin-bottom: 10px
+                }
+            }
+
+        }
+        .t-body,.t-head{width:500px;margin: auto}
+    }
+    .open  
+        {
+            span {
+                width: 116px;
+            }
+        }
+    nav {
+        h2 {font-size: 30px}
+        i {font-size: 20px !important}
+        ul {
+            span{font-size:  15px !important}
+        }
+        .gray{font-size: small !important}
+    }
+    i.top {
+        font-size: 30px;
+        bottom: 10px;
+        right: 10px;
+    }
+ }
+// end media query 

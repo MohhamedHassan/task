@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+.txt-black {
+  color: black; }
+
+.txt-white {
+  color: white; }
+
+.txt-right {
+  text-align: right; }
+
+.txt-left {
+  text-align: left; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 82px; }
+
+.container {
+  width: 90%;
+  margin: auto; }
+
+.mainButtons, main a:first-of-type, main a:last-of-type {
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+  margin-right: 5px;
+  text-align: center; }
+
+.text-center {
+  text-align: center; }
+
+.border {
+  height: 1px;
+  background-color: #b2bec3; }
+
+input, .table-section .input-parent .long-input, .table-section .input-parent .short-input {
+  padding: 10px;
+  border: 2px solid #b2bec3;
+  border-radius: 5px; }
+
+button, input[type="radio"], .table-section .input-parent [type="radio"].long-input, .table-section .input-parent [type="radio"].short-input {
+  cursor: pointer; }
+
+button:focus {
+  outline: none; }
+
+input:focus, .table-section .input-parent .long-input:focus, .table-section .input-parent .short-input:focus {
+  outline: none !important;
+  border-color: #0984e3; }
+
+.list-unstyled {
+  list-style: none; }
+
+.open span {
+  width: 150px;
+  padding-right: 10px; }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: white;
+  box-shadow: 3px 0 5px -2px #888;
+  z-index: 111; }
+  nav h2 {
+    color: #0984e3;
+    font-size: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 4px 20px;
+    text-align: left; }
+  nav ul i {
+    font-size: 35px;
+    padding: 5px 20px;
+    color: #b2bec3; }
+  nav ul li {
+    padding: 10px 0;
+    transition: ease .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px solid transparent; }
+  nav ul li:hover {
+    background: #e4e4e4;
+    border-color: #0984e3; }
+  nav ul span {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    display: inline-block;
+    width: 0;
+    overflow-x: hidden;
+    transition: .3s ease-in;
+    color: #b2bec3; }
+
+main .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; }
+main h5 {
+  color: #636e72; }
+  main h5 span {
+    color: #b2bec3; }
+main a:first-of-type {
+  background-color: #0984e3;
+  color: white;
+  border: 1px solid #0984e3; }
+main a:last-of-type {
+  background-color: white;
+  border: 1px solid black; }
+main .text-center {
+  padding: 25px;
+  box-shadow: 0 4px 2px -2px #b2bec3; }
+  main .text-center small {
+    color: #636e72;
+    font-weight: bold;
+    margin-top: 5px;
+    display: block; }
+
+.table-section {
+  padding: 100px 0; }
+  .table-section .inputs-parent {
+    display: flex; }
+  .table-section .input-parent {
+    position: relative;
+    padding: 10px 0;
+    display: inline-block; }
+    .table-section .input-parent span {
+      position: absolute;
+      top: 3px;
+      left: 10px;
+      background: white;
+      padding: 0 5px;
+      font-size: 10px; }
+    .table-section .input-parent .long-input {
+      width: 250px; }
+    .table-section .input-parent .short-input {
+      width: 125px; }
+  .table-section .left {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 0; }
+  .table-section .right > div:first-of-type {
+    margin-bottom: 25px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center; }
+  .table-section .right input, .table-section .right .input-parent .long-input, .table-section .input-parent .right .long-input, .table-section .right .input-parent .short-input, .table-section .input-parent .right .short-input, .table-section .right small {
+    margin: 0 5px; }
+  .table-section button {
+    background-color: #0984e3;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 50px 0; }
+  .table-section table {
+    width: 100%;
+    table-layout: fixed; }
+  .table-section .t-head {
+    background: #efefef;
+    border-left: solid 1px #b2bec3;
+    border-top: solid 1px #b2bec3;
+    border-right: solid 1px #b2bec3; }
+    .table-section .t-head th {
+      padding: 20px 15px;
+      color: #636e72; }
+  .table-section .t-body {
+    height: 200px;
+    overflow: auto;
+    border: solid 1px #b2bec3; }
+    .table-section .t-body td {
+      border-bottom: solid 1px #b2bec3;
+      padding: 16px; }
+  .table-section ::-webkit-scrollbar {
+    width: 6px; }
+  .table-section ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #636e72; }
+  .table-section ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px gray; }
+
+i.top {
+  color: #0984e3;
+  font-size: 60px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+  transition: .5s;
+  cursor: pointer; }
+
+@media (max-width: 767.98px) {
+  body {
+    padding-left: 68px; }
+
+  .main {
+    display: block !important;
+    text-align: center; }
+    .main > div:first-of-type {
+      margin-bottom: 20px; }
+    .main a {
+      margin-bottom: 10px; }
+
+  h1 {
+    font-size: 25px; }
+
+  .table-section .inputs-parent {
+    display: block; }
+  .table-section .input-parent .long-input {
+    width: 160px; }
+  .table-section .input-parent .short-input {
+    width: 100px; }
+  .table-section .input-parent input, .table-section .input-parent .long-input, .table-section .input-parent .short-input {
+    margin: 0 !important; }
+  .table-section .right > div:first-of-type {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 5px; }
+    .table-section .right > div:first-of-type small, .table-section .right > div:first-of-type input, .table-section .right > div:first-of-type .input-parent .long-input, .table-section .input-parent .right > div:first-of-type .long-input, .table-section .right > div:first-of-type .input-parent .short-input, .table-section .input-parent .right > div:first-of-type .short-input {
+      margin-bottom: 10px; }
+  .table-section .t-body, .table-section .t-head {
+    width: 500px;
+    margin: auto; }
+
+  .open span {
+    width: 116px; }
+
+  nav h2 {
+    font-size: 30px; }
+  nav i {
+    font-size: 20px !important; }
+  nav ul span {
+    font-size: 15px !important; }
+  nav .gray {
+    font-size: small !important; }
+
+  i.top {
+    font-size: 30px;
+    bottom: 10px;
+    right: 10px; } }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,10 @@
+* {
+  direction: rtl; }
+
+.table-section .input-parent span {
+  left: auto !important;
+  right: 10px; }
+.table-section .left {
+  padding: 0 0 0 20px; }
+
+/*# sourceMappingURL=rtl.css.map */
