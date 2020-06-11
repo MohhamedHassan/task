@@ -76,6 +76,7 @@ input:focus, .table-section .input-parent .long-input:focus, .table-section .inp
   padding-right: 10px; }
 
 nav {
+  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
