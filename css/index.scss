@@ -11,6 +11,14 @@ $tHeadBG:#efefef;
     margin:0;
     padding:0
 }
+tr{transition: .5s}
+.error{
+    background: #d87373;
+    color: white;
+    padding: 10px;
+    margin: 10px 0px;
+    display: none
+}
 .flex {
     display:flex;
     align-items: center
@@ -47,6 +55,7 @@ body {
     margin-right: 5px;
     text-align: center
 }
+
 .text-center {
     text-align: center;
 }
@@ -71,6 +80,15 @@ input:focus {
 }
 .list-unstyled {
     list-style: none;
+}
+.tableSectionBtns{
+    background-color: $mainColor;
+    border: none;
+    color:white;
+    font-weight: bold;
+    padding:10px;
+    border-radius:5px;
+    font-weight: bold;
 }
 // end global
 .open  
@@ -166,10 +184,27 @@ main {
 }
 
 // end main
+
 .table-section {
     padding: 100px 0;
+    .container {
+        > button {
+            margin:50px 0;
+        }
+    }
+    button {
+            @extend .tableSectionBtns
+          }
+    tr {
+        td:nth-of-type(5) {
+            button {
+                background-color:red;
+                @extend  .tableSectionBtns
+             }
+        }
+    }
     .inputs-parent {
-        display:flex
+        display:flex;
     }
     .input-parent {
         position: relative;
@@ -208,19 +243,13 @@ main {
             margin:0 5px
         }
     }
-    button {
-        background-color: $mainColor;
-        border: none;
-        color:white;
-        font-weight: bold;
-        padding:10px;
-        border-radius:5px;
-        font-weight: bold;
-        margin: 50px 0; 
-    }
+    
     table {
         width:100%;
         table-layout: fixed;
+        // button.update {
+
+        // }
     }
     .t-head {
         background:$tHeadBG;
@@ -250,6 +279,7 @@ main {
     ::-webkit-scrollbar-thumb {
         box-shadow: inset 0 0 6px gray; 
     }
+    
 }
 // end table section 
 i.top {

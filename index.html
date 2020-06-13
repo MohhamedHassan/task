@@ -53,33 +53,33 @@
                     <div class="left">
                         <div class="input-parent">
                             <span>Subject</span>
-                            <input type="text" name="Subject" placeholder="Subject" class="long-input">
+                            <input type="text" id="subject" name="Subject" placeholder="Subject" class="long-input">
                         </div>
                         <div class="input-parent">
                             <span>No.</span>
-                            <input type="text" name="number" placeholder="No." class="short-input">
+                            <input type="number" id="number" name="number" placeholder="No." class="short-input">
                         </div>
                     </div>
                     <div class="right">
                         <div>
                             <small>Status</small>
                             <div class="flex">
-                                <input type="radio" id="male" name="gender" value="male">
+                                <input type="radio" id="opened" name="status" value="true">
                                 <small>opened</small>
                             </div>
                             <div class="flex">
-                                <input type="radio" id="male" name="gender" value="male">
+                                <input type="radio" id="closed" name="status" value="false">
                                 <small>closed</small>
                             </div>
                         </div>
                         <div class="input-parent">
                             <span>Name</span>
-                            <input type="text" name="userName" placeholder="Name" class="long-input">
+                            <input type="text"  id="name" name="userName" placeholder="Name" class="long-input">
                         </div>
                     </div>
                 </div>
-
-                <button>Add Item</button>
+                <p class="error">all inputs are required</p>
+                <button id="add" >Add Item</button>
                 <p style="margin-bottom: 15px;">Previous Cycle</p>
                 <div class="border" style="margin-bottom: 50px;"></div>
                 <div style="overflow: auto">
@@ -90,6 +90,8 @@
                                 <th>Subject</th>
                                 <th>Status</th>
                                 <th>Name</th>
+                                <th>Delete</th>
+                                <th>Update</th>
                             </thead>
                         </table>
                     </div>
@@ -97,102 +99,7 @@
                         <table cellpadding="0" cellspacing="0">
 
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Requist For Information</td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                </tr>
+                     
                             </tbody>
                         </table>
                     </div>

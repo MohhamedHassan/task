@@ -3,6 +3,16 @@
   margin: 0;
   padding: 0; }
 
+tr {
+  transition: .5s; }
+
+.error {
+  background: #d87373;
+  color: white;
+  padding: 10px;
+  margin: 10px 0px;
+  display: none; }
+
 .flex {
   display: flex;
   align-items: center; }
@@ -70,6 +80,15 @@ input:focus, .table-section .input-parent .long-input:focus, .table-section .inp
 
 .list-unstyled {
   list-style: none; }
+
+.tableSectionBtns, .table-section button, .table-section tr td:nth-of-type(5) button {
+  background-color: #0984e3;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold; }
 
 .open span {
   width: 150px;
@@ -141,6 +160,10 @@ main .text-center {
 
 .table-section {
   padding: 100px 0; }
+  .table-section .container > button {
+    margin: 50px 0; }
+  .table-section tr td:nth-of-type(5) button {
+    background-color: red; }
   .table-section .inputs-parent {
     display: flex; }
   .table-section .input-parent {
@@ -169,15 +192,6 @@ main .text-center {
     align-items: center; }
   .table-section .right input, .table-section .right .input-parent .long-input, .table-section .input-parent .right .long-input, .table-section .right .input-parent .short-input, .table-section .input-parent .right .short-input, .table-section .right small {
     margin: 0 5px; }
-  .table-section button {
-    background-color: #0984e3;
-    border: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin: 50px 0; }
   .table-section table {
     width: 100%;
     table-layout: fixed; }
